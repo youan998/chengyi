@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "xiao_zu/B 缓存技术  Caching technology.md",
+                "file": "xiao_zu/D 能源划分  Energy classification.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "B 缓存技术  Caching technology"
+              "title": "D 能源划分  Energy classification"
             }
           }
         ]
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "xiao_zu/B 缓存技术  Caching technology.md",
+                "file": "xiao_zu/D 能源划分  Energy classification.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "B 缓存技术  Caching technology 的大纲"
+              "title": "D 能源划分  Energy classification 的大纲"
             }
           }
         ],
@@ -170,7 +170,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 273.5
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -185,23 +186,23 @@
   },
   "active": "9e2e40019a8a9162",
   "lastOpenFiles": [
-    "xiao_zu/B 缓存技术  Caching technology~60182.tmp",
-    "xiao_zu/~$缓存技术  Caching technology.docx",
-    "xiao_zu/B 缓存技术  Caching technology.docx",
-    "xiao_zu/D 能源划分  Energy classification.md",
+    "xiao_zu/小组解题报告模板~855704.tmp",
+    "xiao_zu/小组解题报告模板~556D5.tmp",
     "xiao_zu/~$能源划分  Energy classification.docx",
-    "xiao_zu/D 能源划分  Energy classification.docx",
-    "xiao_zu/A . 间距调整  Brake distance.md",
-    "xiao_zu/B 缓存技术  Caching technology.md",
-    "未命名.base",
-    "xiao_zu/~$平滑信号 Delivery plan.docx",
-    "Pasted image 20260621113048.png",
-    "xiao_zu/D.exe",
-    "xiao_zu/D.cpp",
-    "Pasted image 20260621112004.png",
-    "xiao_zu/input_B.txt",
-    "xiao_zu/input_B.txt.tmp.27160.3540de28f4e9",
     "xiao_zu/C.平滑信号 Delivery plan.md",
+    "xiao_zu/C.平滑信号 Delivery plan~FC1DE.tmp",
+    "xiao_zu/~$平滑信号 Delivery plan.docx",
+    "xiao_zu/B 缓存技术  Caching technology~600CC0.tmp",
+    "xiao_zu/B 缓存技术  Caching technology~00CA1.tmp",
+    "xiao_zu/B 缓存技术  Caching technology.md",
+    "xiao_zu/~$缓存技术  Caching technology.docx",
+    "xiao_zu/A . 间距调整  Brake distance~DE877.tmp",
+    "xiao_zu/A . 间距调整  Brake distance.md",
+    "xiao_zu/~$解题报告模板.docx",
+    "xiao_zu/~$. 间距调整  Brake distance.docx",
+    "xiao_zu/D 能源划分  Energy classification.md",
+    "Pasted image 20260621113048.png",
+    "Pasted image 20260621112004.png",
     "Pasted image 20260617210408.png",
     "Pasted image 20260617210327.png",
     "Pasted image 20260617210248.png",
