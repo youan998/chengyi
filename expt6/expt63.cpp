@@ -23,9 +23,9 @@ void solveTightWord(int k, int n) {
     // DP 转移
     for (int i = 2; i <= n; ++i) {
         for (int j = 0; j <= k; ++j) {
-            if (j > 0) dp[i][j] += dp[i - 1][j - 1];
-            dp[i][j] += dp[i - 1][j];
-            if (j < k) dp[i][j] += dp[i - 1][j + 1];
+            if (j > 0) dp[i][j] += dp[i - 1][j - 1];// 来源于小一点的数字
+            dp[i][j] += dp[i - 1][j];// 来源于相同的数字
+            if (j < k) dp[i][j] += dp[i - 1][j + 1];// 来源于大一点的数字
         }
     }
 
@@ -35,7 +35,7 @@ void solveTightWord(int k, int n) {
         tight_sum += dp[n][j];
 
     // 总可能单词数
-    double total_words = pow(k + 1, n);
+    double total_words = pow(k + 1, n);//k+1
 
     // 比率
     double ratio = (tight_sum / total_words) * 100.0;

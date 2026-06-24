@@ -4,8 +4,7 @@
 #include <algorithm>
 
 using namespace std;
-
-// ========== 1. 最长公共子序列 (LCS) ==========
+//  最长公共子序列 (LCS)，不要求连续，但要求相对 
 void solveLCS() {
     cout << "========== 1. 最长公共子序列 (LCS) ==========" << endl;
     string X = "pear";
@@ -35,9 +34,11 @@ void solveLCS() {
             lcs += X[i - 1];
             i--; j--;
         } else if (dp[i - 1][j] > dp[i][j - 1]) {
+            //说明跳过了 X 的当前字符
             i--;
         } else {
             j--;
+            //说明跳过了 Y 的当前字符
         }
     }
     reverse(lcs.begin(), lcs.end());

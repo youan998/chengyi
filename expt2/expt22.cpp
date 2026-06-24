@@ -22,7 +22,8 @@ void printSolution() {
         cout << endl;
     }
 }
-
+//row: 当前处理的行号   
+//col: 当前尝试放置皇后的列号
 void solveNQueens(int row) {
     if (row == N) {
         total_solutions++;// 找到一个解，统计数量并打印前2种解
@@ -30,7 +31,7 @@ void solveNQueens(int row) {
         return;
     }
     for (int col = 0; col < N; col++) {
-        // diag1: row + col;  diag2: row - col + N - 1
+        // diag1: row + col从左上到右下的对角线编号;  diag2: row - col + N - 1从右上到左下的对角线编号
         if (!col_used[col] && !diag1_used[row + col] && !diag2_used[row - col + N - 1]) {
             // 放置皇后
             queen_pos[row] = col;

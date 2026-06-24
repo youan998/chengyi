@@ -22,7 +22,7 @@ int visited[ROW][COL] = {0};
 int dx[4] = {-1, 1, 0, 0};
 int dy[4] = {0, 0, -1, 1};
 
-struct Point { int x, y; };
+struct Point { int x, y; };// 用于存储路径点
 vector<Point> path1, path2;
 
 // ========== DFS ==========

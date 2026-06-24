@@ -4,7 +4,7 @@
 
 using namespace std;
 const int SIZE = 8;
-int board[SIZE][SIZE];
+int board[SIZE][SIZE];// 棋盘，-1表示未访问，其他数字表示走的步数   
 // 骑士走日字的8个方向
 int cx[8] = {1, 1, 2, 2, -1, -1, -2, -2};
 int cy[8] = {2, -2, 1, -1, 2, -2, 1, -1};
@@ -13,7 +13,7 @@ bool isSafe(int x, int y) {
     return (x >= 0 && x < SIZE && y >= 0 && y < SIZE && board[x][y] == -1);
 }
 
-// 计算某位置下一步的可走位置数量 (Warnsdorff 规则的核心)
+// 计算某位置下一步的可走位置数量
 int getDegree(int x, int y) {
     int count = 0;
     for (int i = 0; i < 8; ++i) {
@@ -46,7 +46,6 @@ bool solveKnightTour(int x, int y, int step) {
             return true;
         }
     }
-
     // 回溯
     board[x][y] = -1;
     return false;

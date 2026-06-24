@@ -9,7 +9,7 @@ using namespace std;
 int maxSubArray(const vector<int>& nums) {
     int cur_max = nums[0], overall_max = nums[0];
     for (size_t i = 1; i < nums.size(); ++i) {
-        cur_max = max(nums[i], cur_max + nums[i]);
+        cur_max = max(nums[i], cur_max + nums[i]);//如果之前累加为负数则选择nums[i]
         overall_max = max(overall_max, cur_max);
     }
     return overall_max;
@@ -25,15 +25,15 @@ void solveMaxSubMatrix() {
         {-1,  8,  0, -2}
     };
 
-    int rows = matrix.size();
+    int rows = matrix.size();//行号
     if (rows == 0) return;
-    int cols = matrix[0].size();
+    int cols = matrix[0].size();//列号
 
     int max_sum = -1e9; // 初始为一个极小值
 
     // 遍历所有可能的上下行组合 (top 到 bottom)
     for (int top = 0; top < rows; ++top) {
-        // 用于存放压扁成一维的列和
+        // 当前行区间内，第 col 列的所有元素之和。
         vector<int> col_sum(cols, 0);
 
         for (int bottom = top; bottom < rows; ++bottom) {
