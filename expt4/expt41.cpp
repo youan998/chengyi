@@ -40,6 +40,9 @@ void solveLCS() {
             j--;
             //说明跳过了 Y 的当前字符
         }
+       // if(i-1==0||j-1==0){
+       //     cout<<i<<X[i-1];
+        //}
     }
     reverse(lcs.begin(), lcs.end());
 

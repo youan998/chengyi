@@ -15,7 +15,7 @@ int maxSubArray(const vector<int>& nums) {
     return overall_max;
 }
 
-// ========== 3. 最大子矩阵和 ==========
+// 最大子矩阵和
 void solveMaxSubMatrix() {
     cout << "========== 3. 最大子矩阵和 ==========" << endl;
     vector<vector<int>> matrix = {

@@ -55,9 +55,10 @@ void solveLCS() {
 // 构建 next 数组（前缀函数）
 vector<int> getNext(const string& pattern) {
     int m = pattern.length();
-    vector<int> next(m, 0);
-    int j = 0;
+    vector<int> next(m, 0);//初始全为 0
+    int j = 0;//j 代表最长相同前后缀的长度，也代表前缀末尾的指针
     for (int i = 1; i < m; i++) {
+        // i 是当前后缀末尾的指针
         while (j > 0 && pattern[i] != pattern[j])
             j = next[j - 1];
         if (pattern[i] == pattern[j])
